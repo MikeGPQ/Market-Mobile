@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp"
+    app:cardBackgroundColor="#FFF9F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/imgCliente"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/ic_cliente"
+            android:scaleType="centerInside" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvIdCliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID: C01"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#333" />
+
+            <TextView
+                android:id="@+id/tvNombreCliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre del cliente"
+                android:textSize="15sp"
+                android:textColor="#444" />
+
+            <TextView
+                android:id="@+id/tvPuntosCliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Puntos: 0"
+                android:textColor="#FF5722"
+                android:textSize="14sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tvEstadoCliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estado: Activo"
+                android:textSize="14sp"
+                android:textColor="#777" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btnVerMas"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_more_vert"
+            android:contentDescription="Ver detalles"
+            android:clickable="true"
+            android:focusable="true" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+

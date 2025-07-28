@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="24dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="Términos y Condiciones"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/tvTermsContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="
+            TÉRMINOS Y CONDICIONES - MarketMobile v1.2
+               \n
+            1. Aceptación
+            \n
+            Al usar MarketMobile, aceptas estos términos.
+            \n
+            2. Funciones Principales
+            \n
+            ✔ Gestión de inventario
+            \n
+            ✔ Reportes de ventas (cortes X/Y)
+            \n
+            ✔ Control de usuarios y asistencias
+            \n
+            ✔ Sincronización en tiempo real
+
+            \n
+            3. Responsabilidades
+            \n
+            🔒 Solo personal autorizado
+            \n
+            📊 Datos precisos en inventario/ventas
+            \n
+            👥 Confidencialidad de credenciales
+               \n
+
+            4. Privacidad
+            \n
+            Tus datos están protegidos por ley.
+            \n
+
+            Versión 1.2 - [07/08/2025]
+"
+            android:textSize="14sp"/>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Close"
+        android:textColor="#FD5A28"
+        android:textSize="16sp"
+        android:backgroundTint="#FFFFFF"
+        android:layout_below="@id/scrollView"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="79dp"
+        android:layout_height="67dp"
+        android:layout_alignBottom="@id/btnClose"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="8dp"
+        app:srcCompat="@drawable/logo_app" />
+</RelativeLayout>

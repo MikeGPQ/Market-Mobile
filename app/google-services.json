@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "175301205644",
+    "project_id": "marketpal-mobile",
+    "storage_bucket": "marketpal-mobile.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:175301205644:android:d3c52c980fd9239c0fe5a9",
+        "android_client_info": {
+          "package_name": "com.example.marketmobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByuyN-Eq_7uzqoEvJfqRbATpZXP7gOM9Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
